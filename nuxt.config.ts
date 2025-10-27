@@ -1,6 +1,7 @@
 import tsconfigPaths from 'vite-tsconfig-paths'
 
 export default defineNuxtConfig({
+  compatibilityDate: '2025-10-27',
   devtools: { enabled: true },
   modules: [
     '@nuxt/image',
@@ -10,6 +11,9 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tsconfigPaths()]
   },
+  css: [
+    'animate.css/animate.min.css'
+  ],
   pinia: {
     autoImports: ['defineStore', ['defineStore', 'definePiniaStore']]
   },
