@@ -12,7 +12,8 @@ export default defineNuxtConfig({
     plugins: [tsconfigPaths()]
   },
   css: [
-    'animate.css/animate.min.css'
+    'animate.css/animate.min.css',
+    'bootstrap/dist/css/bootstrap.min.css'
   ],
   pinia: {
     autoImports: ['defineStore', ['defineStore', 'definePiniaStore']]

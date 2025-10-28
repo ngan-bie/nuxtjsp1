@@ -1,11 +1,11 @@
 <template>
   <div>
-    <header><h1>My Nuxt App</h1></header>
-    <div class="wow animate__animated animate__fadeInUp">
-        Animated content top up
-    </div>
-
+    <Header></Header>
     <NuxtPage />
-    <footer>© 2025 My Nuxt App</footer>
   </div>
 </template>
+
+<script setup>
+import HeroSection from '~/components/sections/HeroSection.vue'
+import Header from '~/components/sections/Header.vue'
+</script>
